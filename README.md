@@ -32,3 +32,14 @@ Specifics are included in the requirements.txt file.
 | University of Michigan-Ann Arbor | University of Maryland-College Park | University of Florida | University of Illinois Urbana-Champaign | University of Southern California | University of Virginia-Main Campus | Northwestern University | Rutgers University-New Brunswick | University of Wisconsin-Madison | New York University | Cornell University |
 | The University of Alabama | The University of Tennessee-Knoxville | University of South Carolina-Columbia | Louisiana State University and Agricultural & Mechanical College | University of Arkansas | Michigan State University | University of Delaware | University of Cincinnati-Main Campus | University of Colorado Boulder | University of Oklahoma-Norman Campus | Indiana University-Bloomington | 
 
+### How to Use
+Given an environment with Python already installed and in the repository directory, a user should be able to run the following in the terminal: 
+```
+pip install -r requirements.txt
+```
+
+Then:
+
+```
+python main.py data/SchoolData.csv data/gower_distance.csv data/similar_colleges.csv
+```
