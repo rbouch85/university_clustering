@@ -1,5 +1,11 @@
 '''
-The file executes the data cleaning process and loads the data from csv files.
+The file executes the full process of loading school data, cleaning the data, 
+running Gower's distance, and creating a dataset of similar colleges.
+To run this in the terminal, a user needs to:
+- Provide the path to the input csv file
+- Provide the path to save the Gower's distance matrix
+- Provide the path to save the similar colleges dataset
+Example: python main.py SchoolData.csv gower_distance.csv similar_colleges.csv
 '''
 
 import sys
@@ -20,8 +26,10 @@ if __name__ == '__main__':
     all_tests(data)
     print("Running Gower's Distance")
     df_gower = similarity_matrix(data)
+    print("Saving Gower's Distance Matrix")
+    save_csv(df_gower, sys.argv[2])
     print("Creating Similar Colleges Dataset")
     df_similar = create_similar_colleges(df_gower)
-    print("Saving New Dataset")
-    save_csv(df_similar, sys.argv[2])
+    print("Saving Similarity Dataset")
+    save_csv(df_similar, sys.argv[3])
     print("Done")
