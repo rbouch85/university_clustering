@@ -8,16 +8,16 @@ The additional intent is that this script can be used in future years when new d
 The steps involved include:
 1. Loading data from a .csv file
 2. Cleaning data
-3. Visually exploring the distribution of some of the features
-4. Calculating the Gower's distances between schools
-5. Creating an executing a function to identify schools similar to an input school
+3. Running some manual checks to confirm value distributions and data types
+4. Calculating the Gower's distances between schools, saving the matrix to a .csv
+5. Identifying the top 10 most similar schools to the input school, saving the output as a .csv
 
 ### Data
 This uses datafrom the U.S. Department of Education College Scorecard. 
 
 Data can be downloaded [here](https://collegescorecard.ed.gov/data/), and the documentation is available [here](https://collegescorecard.ed.gov/data/documentation/). 
 
-A note that the original dataset is just over 100MB. GitHub does not like files of this size, so the repository has a reduced dataset (with less columns but all the schools). The original notebook contains the step on which columns were retained from the original dataset. 
+_A note that the original dataset is just over 100MB. GitHub does not like files of this size, so the repository has a reduced dataset (with less columns but all the schools) saved in the data folder. The original jupyter notebook contains the step on which columns were retained from the original dataset._
 
 ### Environment & Packages
 Specifics are included in the requirements.txt file. 
@@ -27,7 +27,8 @@ Specifics are included in the requirements.txt file.
 
 2. A csv that contains the input school and the top ten most similar schools. Like below:
 
-| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 |input_school|similar1|similar2|similar3|similar4|similar5|similar6|similar7|similar8|similar9|similar10|
 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-University of Michigan-Ann Arbor | University of Maryland-College Park | University of Florida | University of Illinois Urbana-Champaign | University of Southern California | University of Virginia-Main Campus | Northwestern University | Rutgers University-New Brunswick | University of Wisconsin-Madison | New York University | Cornell University |
+| University of Michigan-Ann Arbor | University of Maryland-College Park | University of Florida | University of Illinois Urbana-Champaign | University of Southern California | University of Virginia-Main Campus | Northwestern University | Rutgers University-New Brunswick | University of Wisconsin-Madison | New York University | Cornell University |
+| The University of Alabama | The University of Tennessee-Knoxville | University of South Carolina-Columbia | Louisiana State University and Agricultural & Mechanical College | University of Arkansas | Michigan State University | University of Delaware | University of Cincinnati-Main Campus | University of Colorado Boulder | University of Oklahoma-Norman Campus | Indiana University-Bloomington | 
+
