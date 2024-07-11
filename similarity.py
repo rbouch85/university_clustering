@@ -1,5 +1,6 @@
 '''
-This file takes a school as input and returns the top 10 most similar schools based on Gower's distance.
+This file takes a school as input and returns the top 10 most similar 
+schools based on Gower's distance.
 '''
 
 def find_similar_top10(df_gower, college_name):

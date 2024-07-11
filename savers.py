@@ -9,4 +9,3 @@ def save_csv(df, filename):
     :return: None
     '''
     df.to_csv(filename, index=False)
-    return None

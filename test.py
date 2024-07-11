@@ -21,7 +21,7 @@ def test1(data):
         print('FAIL')
         print('Columns with missing values:')
         print(data.columns[data.isnull().any()])
-    return None
+
 
 def test2(data):
     '''
@@ -31,7 +31,7 @@ def test2(data):
     '''
     print('Distinct data types in the dataset:')
     print(data.dtypes.unique())
-    return None
+
 
 def test3(data):
     '''
@@ -45,7 +45,7 @@ def test3(data):
         print(f'{column}: missing={data[column].isnull().sum()}')
     for column in data.select_dtypes(exclude=[np.number]).columns:
         print(f'{column}: unique={data[column].nunique()}')
-    return None
+
 
 def test4(data):
     '''
@@ -58,7 +58,7 @@ def test4(data):
         print('PASS')
     else:
         print('FAIL')
-    return None
+
 
 def all_tests(data):
     '''
@@ -70,4 +70,3 @@ def all_tests(data):
     test2(data)
     test3(data)
     test4(data)
-    return None

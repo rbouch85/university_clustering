@@ -70,7 +70,7 @@ def update_school_size(df):
     '''
     df['CCSIZSET'] = df['CCSIZSET'].astype(int)
     list_values1 = [-2, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-    text_values1 = ['Not applicable', 
+    text_values1 = ['Not applicable',
                 'Not classified', 
                 'Two-year, very small', 
                 'Two-year, small', 
@@ -103,13 +103,13 @@ def update_school_religion(df):
     '''
     df['RELAFFIL'] = df['RELAFFIL'].fillna(-1)
     df['RELAFFIL'] = df['RELAFFIL'].astype(int)
-    list_values2 = [-1, -2, 22, 24, 27, 28, 30, 33, 34, 35, 36, 37, 38, 
-                39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 50, 51, 52, 
-                53, 54, 55, 57, 58, 59, 60, 61, 64, 65, 66, 67, 68, 
-                69, 71, 73, 74, 75, 76, 77, 78, 79, 80, 81, 84, 87, 
-                88, 89, 91, 92, 93, 94, 95, 97, 99, 100, 101, 102, 
+    list_values2 = [-1, -2, 22, 24, 27, 28, 30, 33, 34, 35, 36, 37, 38,
+                39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 50, 51, 52,
+                53, 54, 55, 57, 58, 59, 60, 61, 64, 65, 66, 67, 68,
+                69, 71, 73, 74, 75, 76, 77, 78, 79, 80, 81, 84, 87,
+                88, 89, 91, 92, 93, 94, 95, 97, 99, 100, 101, 102,
                 103, 105, 106, 107]
-    text_values2 = ['Not reported', 
+    text_values2 = ['Not reported',
                 'Not applicable', 
                 'American Evangelical Lutheran Church', 
                 'African Methodist Episcopal Zion Church', 

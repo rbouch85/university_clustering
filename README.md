@@ -22,3 +22,12 @@ A note that the original dataset is just over 100MB. GitHub does not like files 
 ### Environment & Packages
 Specifics are included in the requirements.txt file. 
 
+### Outputs
+1. A Gower's Matrix of similarity results, as a csv, that can be used for further data science modeling. 
+
+2. A csv that contains the input school and the top ten most similar schools. Like below:
+
+| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+|input_school|similar1|similar2|similar3|similar4|similar5|similar6|similar7|similar8|similar9|similar10|
+| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+University of Michigan-Ann Arbor | University of Maryland-College Park | University of Florida | University of Illinois Urbana-Champaign | University of Southern California | University of Virginia-Main Campus | Northwestern University | Rutgers University-New Brunswick | University of Wisconsin-Madison | New York University | Cornell University |
